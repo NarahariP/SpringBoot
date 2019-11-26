@@ -1,4 +1,4 @@
-package com.hari.boot.SpringBootApplicaiton;
+package com.hari;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SpringBootApplicaitonApplication {
 
 	public static void main(String[] args) {
+		System.out.println("Application >> Starting....");
 		SpringApplication.run(SpringBootApplicaitonApplication.class, args);
 	}
 
