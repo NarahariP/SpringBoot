@@ -7,6 +7,11 @@
 <title>Login</title>
 </head>
 <body>
-	Welcome My Page ${name}
+	<font color="red">${message}</font>
+<form method="post">
+	Name : <input type="text" name="name">
+	password : <input type="password" name="password">
+	<input type="submit"/>
+</form>
 </body>
 </html>
