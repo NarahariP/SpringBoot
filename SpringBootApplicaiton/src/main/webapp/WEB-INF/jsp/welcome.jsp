@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	Welcome ${name}!
+	Welcome ${name}! <a href="/list-todos">Click here</a> here to manage your todos
 </body>
 </html>
