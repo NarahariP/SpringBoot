@@ -18,7 +18,7 @@ public class TodoService {
 	
 	static {
 		todos.add(new Todo(1, "Hari","Boot", new Date(), false));
-		todos.add(new Todo(2, "Narahari","MicroServices", new Date(), false));
+		todos.add(new Todo(2, "test","MicroServices", new Date(), false));
 		todos.add(new Todo(3, "NP","Cloud", new Date(), false));
 	}
 	
