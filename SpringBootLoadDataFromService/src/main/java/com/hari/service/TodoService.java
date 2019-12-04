@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import org.springframework.stereotype.Service;
 
@@ -22,13 +23,23 @@ public class TodoService {
 	}
 	
 	public List<Todo> retriveTodos(String user){
-		List<Todo> filterTodos = new ArrayList<>();
+		/**
+		 * In Java 8
+		 */
+		return todos.stream()
+			.filter(todo -> todo.getUser().equals(user))
+			.collect(Collectors.toList());
+		
+		/**
+		 * Before Java 8
+		 * 
+		 * List<Todo> filterTodos = new ArrayList<>();
 		for (Todo todo : todos) {
 			if(todo.getUser().equals(user)) {
 				filterTodos.add(todo);
 			}
 		}
-		return filterTodos;
+		return filterTodos;*/
 	}
 	
 	public void addTodo(String user, String desc, Date targetDate, boolean isDone) {
