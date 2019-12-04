@@ -28,7 +28,7 @@ public class TodoService {
 		 * In Java 8
 		 */
 		return todos.stream()
-			.filter(todo -> todo.getUser().equals(user))
+			.filter(todo -> todo.getUser().equalsIgnoreCase(user))
 			.collect(Collectors.toList());
 		
 		/**

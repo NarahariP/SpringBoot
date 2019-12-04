@@ -7,8 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-	Here are the list of your todos:
-	${todos}
-	<a href="/add-item">Add Todo Iteam</a>
+	Add Item for ${name}
+<form method="post">
+	Description: <input type="text" name="description">
+	<input type="submit"/>
+</form>
 </body>
 </html>
