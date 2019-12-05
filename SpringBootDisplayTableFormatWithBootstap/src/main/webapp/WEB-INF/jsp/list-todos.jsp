@@ -3,29 +3,34 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" href="webjars/bootstrap/4.3.1/css/bootstrap.min.css">
 <meta charset="ISO-8859-1">
 <title>Item Details</title>
 </head>
 <body>
-	Here are the list of ${name} todos:
-	<table>
-		<thead>
-			<tr>
-				<td>Description</td> 
-				<td>Target Date</td>
-				<td>Is it Done</td>
-			</tr>
-		</thead>
-		<tbody>
-			<c:forEach items="${todos}" var="item">
+	<div class="container">
+		<table class="table table-striped">
+			<caption style="caption-side:top;">Your Items are:</caption>
+			<thead>
 				<tr>
-					<td>${item.desc}</td>
-					<td>${item.targetDate}</td>
-					<td>${item.done}</td>
+					<td>Description</td> 
+					<td>Target Date</td>
+					<td>Is it Done</td>
 				</tr>
-			</c:forEach>
-		</tbody>
-	</table>
-	<a href="/add-item">Add Todo Iteam</a>
+			</thead>
+			<tbody>
+				<c:forEach items="${todos}" var="item">
+					<tr>
+						<td>${item.desc}</td>
+						<td>${item.targetDate}</td>
+						<td>${item.done}</td>
+					</tr>
+				</c:forEach>
+			</tbody>
+		</table>
+		<a type="button" href="/add-item">Add Todo Iteam</a>
+		<script src="webjars/jquery/3.4.1/jquery.min.js"></script>
+		<script src="webjars/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	</div>
 </body>
 </html>
