@@ -28,7 +28,7 @@ public class TodoController {
 	
 	@RequestMapping(value="/add-item", method = RequestMethod.GET)
 	public String showTodoPage(ModelMap model) {
-		return "add-todos-item";
+		return "add-todo-item";
 	}
 	
 	@RequestMapping(value="/add-item", method = RequestMethod.POST)
