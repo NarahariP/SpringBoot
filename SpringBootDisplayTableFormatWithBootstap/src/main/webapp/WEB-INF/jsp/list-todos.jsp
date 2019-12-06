@@ -28,7 +28,7 @@
 				</c:forEach>
 			</tbody>
 		</table>
-		<a type="button" href="/add-item">Add Todo Iteam</a>
+		<a type="button" class="btn btn-success" href="/add-item">Add Todo Iteam</a>
 		<script src="webjars/jquery/3.4.1/jquery.min.js"></script>
 		<script src="webjars/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	</div>
