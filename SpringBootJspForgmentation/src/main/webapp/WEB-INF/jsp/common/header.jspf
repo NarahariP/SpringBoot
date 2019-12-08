@@ -6,11 +6,6 @@
 <html>
 <head>
 <link rel="stylesheet" href="webjars/bootstrap/4.3.1/css/bootstrap.min.css">
-<style type="text/css">
-	.active{
-		font-weight:bold;
-	}
-</style>
 <meta charset="ISO-8859-1">
 <title>Spring Boot Application</title>
 </head>
