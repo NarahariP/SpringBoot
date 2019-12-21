@@ -1,0 +1,15 @@
+# To work with yml please remove properties file both can't be used at a time
+# If we have to still applcation can read info from properties file because properties file is high priority
+
+spring:
+  profiles:
+    active: dev
+
+logging:
+  level:
+    org:
+      springframework: info
+app:
+  name:  Spring World (value form property)
+welcome:
+  message:  Welcome to ${app.name} from yml file!
