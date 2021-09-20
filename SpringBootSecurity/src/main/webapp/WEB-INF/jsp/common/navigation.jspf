@@ -1,0 +1,11 @@
+<nav role="navigation" class="navbar navbar-expand-sm bg-light">
+	<div class="">
+		<a href="#" class="navbar-brand">Spring Boot</a>
+	</div>
+	<div class="navbar-collapse">
+		<ul class="nav navbar-nav">
+			<li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+			<li class="nav-item"><a class="nav-link" href="/list-todos">Items</a></li>
+		</ul>
+	</div>
+</nav>
